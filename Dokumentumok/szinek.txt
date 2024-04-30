@@ -1,14 +1,4 @@
-#f8ffc5
-#008080
-
-#de9742
-#202a64
-
-#bff9f7
-#2a7b03
-
-#fff9fc
-#2276c5
-
-#f0e9e9
-#2f426a
+Betű: #6A332F
+Kontraszt : #f0e9e9
+Menü: #333D3B
+      #E2D8C8
