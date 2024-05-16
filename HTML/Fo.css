@@ -1,0 +1,19 @@
+body{
+    display: flex;
+}
+.container{
+    background-image: url(../kepek/hatterKep1.jpg);
+    height: 600px;
+    width: 100%;
+}
+.menu{
+    background-color: #333D3B;
+    width: 30%;
+    height: 10px;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+#logoid{
+    height: 150px;
+}
