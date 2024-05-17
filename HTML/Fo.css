@@ -1,21 +1,54 @@
-body{
-    display: flex;
-    flex-direction: row;
-}
-.container{
-    background-image: url(../kepek/hatterKep1.jpg);
-    height: 600px;
-    width: 75%;
-    align-items: end;
-}
-.menu{
-    background-color: #333D3B;
-    width: 25%;
-    height: 10px;
-    top: 0;
-    left: 0;
-    position: fixed;
-}
-#logoid{
-    width: 100%;
-}
+.menu {
+      height: 100%; 
+      width: 20%; 
+      position: fixed; 
+      z-index: 1; 
+      top: 0; 
+      left: 0;
+      background-color: #333D3B; 
+      overflow-x: hidden; 
+    }
+    
+    
+    .menu a {
+      padding: 20px 0px 20px 8px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #ffffff;
+      border-top: 5px #404B49 solid;
+      display: block;
+    }
+    #uccso{
+        border-bottom: 5px solid #404B49;
+    }
+    
+    
+    .menu a:hover {
+      color: #333D3B;
+      background-color: #E2D8C8;
+    }
+    
+    
+    .kontener {
+      margin-left: 24%;
+      
+      height: 1000px
+    }
+    img{
+        width: 100%;
+        top: 0;
+    }
+    body{
+        background-image: url(../kepek/hatterKep2.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    #elso{
+        border-top: 0px;
+    }
+    .content{
+        background-color: #f0e9e9;
+        opacity: 80%;
+        margin-left: -5%;
+        height: 1000px;
+    }
