@@ -14,7 +14,10 @@
         .content{text-align: center;
         font-family: kalam;
         color:rgb(106, 51, 47);
-        height: 1200px;}
+        height: 1200px;
+        animation-name: homaly;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;}
         .kontener{height: 820px;}
        .szoveg{text-align: justify;
 
@@ -31,9 +34,36 @@
         #boroskep{width: 400px;
         height: 270px;
         margin-right: 20px;
+        margin-left: 20px;
     border-radius: 10px;}
     p{margin-left: 20px;
         margin-right: 20px;}
+    #allobacsi{width: 220px; 
+    filter: grayscale(100%);
+    animation-name: fekete;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+    #allobacsi:hover{    
+        animation-name: szines;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;}
+    @keyframes szines{
+        0%{filter: grayscale(100%);}
+        100%{filter: grayscale(0%);}
+
+    }
+    @keyframes fekete{
+        0%{filter: grayscale(0%);}
+        100%{filter: grayscale(100%);}
+
+    }
+    @keyframes homaly{
+        0%{opacity: 0%;}
+        100%{opacity: 100%;}
+
+    }
+        
     </style>
 </head>
     <body>
@@ -67,6 +97,7 @@
                 </div>
                 <div class="sor">
                     <p class="szoveg" style="width: 700px;">"500 év tapasztalata egy pohárba öntve", így beszélt Orosházi Ferenc, a borászat jelenlegi igazgatója. Feladatunknak tekintjük, hogy a borászatunk, illetve városunk hírnevét gyarapítsuk. Ezzel a szándékkal készítettük el weboldalunkat, hogy többek számára mesélhessük el történetünket, és azért, hogy nagyobb közönség számára tegyük borainkat elérhetővé.</p>
+                    <img src="../kepek/BacsiAll.jpg" alt="" id="allobacsi">
                 </div>
 
             </div>
