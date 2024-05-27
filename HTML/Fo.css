@@ -42,6 +42,7 @@
         transition: 0.3s ease-out;
     }
     body{
+        scroll-behavior: smooth;
         background-image: url(../kepek/hatterKep2.jpg);
         background-size: cover;
         background-attachment: fixed;
