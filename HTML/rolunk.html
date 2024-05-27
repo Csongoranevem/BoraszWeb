@@ -17,7 +17,8 @@
         height: 1200px;
         animation-name: homaly;
         animation-duration: 0.5s;
-        animation-fill-mode: forwards;}
+        animation-fill-mode: forwards;
+        padding-bottom: 15px;}
         .kontener{height: 820px;}
        .szoveg{text-align: justify;
 
@@ -30,7 +31,10 @@
                 border-radius: 10px;}
         .sor{display: flex;
         flex-direction: row;
-        justify-content: space-around}
+        justify-content: space-around;
+        animation-name: oldal;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;}
         #boroskep{width: 400px;
         height: 270px;
         margin-right: 20px;
@@ -60,6 +64,7 @@
     @keyframes fekete{
         0%{filter: grayscale(0%);}
         100%{filter: grayscale(100%);}
+        
 
     }
     @keyframes homaly{
@@ -67,11 +72,15 @@
         100%{opacity: 100%;}
 
     }
+    @keyframes oldal{
+        0%{margin-top:30px ;}
+        100%{margin-top:0px ;}
+    }
     @media only screen and (max-width:1250px)
         {
             .sor{flex-direction: column;
                 align-items: center;}
-                .content{height:1700px;}
+                .content{height:1720px;}
             #allobacsi{padding-bottom: 20px;}
             .szoveg{font-size:large;}
             #revers{flex-direction: column-reverse;}
@@ -79,13 +88,30 @@
             #masodszov{width: 600px;}
             #harszov{width: 600px;}
         }
+        @media only screen and (max-width:800px)
+        {
+            #elsoszov{width: 500px;}
+            #masodszov{width: 500px;}
+            #harszov{width: 500px;}
+            .content{height: fit-content;}
+
+        }
+        @media only screen and (max-width:670px)
+        {
+            #elsoszov{width: 300px;}
+            #masodszov{width: 300px;}
+            #harszov{width: 300px;}
+            #boroskep{width: 300px;
+                    height: 200px;}
+            
+        }
         
     </style>
 </head>
     <body>
 
         <div class="menu">
-            <img src="../kepek/logo.PNG" alt="">
+            <a href="index.html" id="logokep"><img src="../kepek/logo.PNG" href="index.html"></a>
             <a href="borok.html" id="elso">Borok</a>
             <a href="rolunk.html">Rólunk</a>
             <a href="erdekessegek.html">Érdekességek</a>
