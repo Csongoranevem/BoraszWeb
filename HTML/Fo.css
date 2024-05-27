@@ -53,10 +53,18 @@
         height: fit-content;
         min-height: 1000px;
     }
-
+    #logokep{
+      padding: 0px;
+    }
+    #logokep:hover{
+      background-color: #333D3B;
+    }
     footer{
       letter-spacing: 1px;
       margin-top: 40%;
       text-align: center;
       color: #94b1ab;
+    }
+    #slidekep{
+      width: 100%;
     }
