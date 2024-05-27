@@ -38,6 +38,8 @@
     img{
         width: 100%;
         top: 0;
+        overflow: hidden;
+        transition: 0.3s ease-out;
     }
     body{
         background-image: url(../kepek/hatterKep2.jpg);
@@ -67,4 +69,8 @@
     }
     #slidekep{
       width: 100%;
+    }
+    img:hover{
+      box-shadow: 0px 0px 10px black;
+      transform:  scale(1.05)
     }
