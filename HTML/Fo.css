@@ -70,7 +70,14 @@
     #slidekep{
       width: 100%;
     }
+    #slidekep:hover{
+      transform: none;
+      box-shadow: none;
+    }
     img:hover{
       box-shadow: 0px 0px 10px black;
       transform:  scale(1.05)
+    }
+    .szoveg{
+      background-color: rgba(51, 61, 59,0.8);
     }
