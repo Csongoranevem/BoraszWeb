@@ -25,7 +25,7 @@
     
     
     .menu a:hover {
-      color: #333D3B;
+      color: rgb(51, 61, 59);
       background-color: #E2D8C8;
     }
     
@@ -42,6 +42,7 @@
         transition: 0.3s ease-out;
     }
     body{
+      font-family: "Kalam";
         scroll-behavior: smooth;
         background-image: url(../kepek/hatterKep2.jpg);
         background-size: cover;
@@ -82,3 +83,11 @@
     .szoveg{
       background-color: rgba(51, 61, 59,0.8);
     }
+    .centerrr{
+      text-align: center;
+      margin: 0 auto;
+    }
+    #kosarkep{
+      width: 40px;
+    }
+    
