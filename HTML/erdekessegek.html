@@ -19,10 +19,16 @@
           text-align: center;
           height: fit-content;
           padding-bottom: 20px;
+          animation-name: homaly;
+          animation-duration: 0.5s;
+          animation-fill-mode: forwards;
           }
           .sor{display: flex;
             flex-direction: row;
-            justify-content: space-around;}
+            justify-content: space-around;
+            animation-name: oldal;
+            animation-duration: 1s;
+            animation-fill-mode: forwards;}
           #elsoszov{width: 800px;}
           #masodszov{width: 700px;}
           #regiboraszat{width: 500px;
@@ -35,6 +41,41 @@
             border-radius: 5px;
             border: 2px solid black;
               }
+          #ujkorart{width: 340px; margin-left:10px}
+
+              @keyframes homaly{
+                0%{opacity: 0%;}
+                100%{opacity: 100%;}
+        
+            }
+            @keyframes oldal{
+              0%{margin-top:30px ;}
+              100%{margin-top:0px ;}
+          }
+          @media only screen and (max-width:1350px)
+          {
+            .sor{flex-direction: column;
+                justify-content: center;
+                align-items: center;}
+                #revers{flex-direction: column-reverse;}
+                #kepessor{flex-direction: row;}
+          }
+          @media only screen and (max-width:1150px)
+          {
+                #kepessor{display: inline;}
+                #elsoszov{width: 600px;}
+                #masodszov{width: 600px;}
+          }
+          @media only screen and (max-width:680px)
+          {
+                
+                #elsoszov{width: 320px;}
+                #masodszov{width: 320px;}
+                #regiboraszat{width: 320px;
+                              height: 170px;}
+                #ujkorart{width: 270px;
+                          height: 180px;}
+          }
     </style>
 </head>
     <body>
@@ -63,14 +104,14 @@
                 
                 <p id="elsoszov"><b>Ősi eredet:</b> A bor készítésének nyomai több mint 8 000 évvel ezelőttre nyúlnak vissza, a mai Grúzia területén. Az egyik legrégebbi borászati helyszínt egy grúz barlangban találták, ahol agyagedények maradványai tartalmaztak bor előállítására utaló nyomokat. <br> <b>Földrajzi sokszínűség:</b> A bor szinte minden kontinensen készül, kivéve az Antarktiszt. Franciaország, Olaszország, Spanyolország, az Egyesült Államok, és Ausztrália a legnagyobb borászati nemzetek közé tartoznak.</p>
               </div>
-              <div class="sor">
+              <div class="sor" id="revers">
                 <p id="masodszov"><b>Bor és egészség:</b> Mérsékelt mennyiségben fogyasztva a vörösbor jótékony hatással lehet az egészségre, mivel antioxidánsokat, például resveratrolt tartalmaz, amely segíthet a szív- és érrendszeri betegségek kockázatának csökkentésében. <br><b>Borkultúra:</b> Számos kultúrában a bor jelentős szerepet játszik a társadalmi eseményeken és vallási szertartásokon. Például a kereszténységben a bor az eucharisztia (úrvacsora) szerves része.</p>
                 <img src="../kepek/regiboraszat.jpg" alt="" id="regiboraszat">
               </div>
-              <div class="sor" style="margin-top: 50px;">
-                <img src="../kepek/regiedeny.jpg" alt="" class="art" style="width: 250px;" >
-                <img src="../Kepek/ujkorart.jpg" alt="" class="art" style="width: 340px;">
-                <img src="../kepek/kozepkorart.jpg" alt="" class="art" style="width: 250px;">
+              <div class="sor" style="margin-top: 50px;" id="kepessor">
+                <img src="../kepek/regiedeny.jpg" alt="" class="art" style="width: 250px; margin-left:10px" >
+                <img src="../Kepek/ujkorart.jpg" alt="" class="art" id="ujkorart">
+                <img src="../kepek/kozepkorart.jpg" alt="" class="art" style="width: 250px; margin-left:10px">
               </div>
             </div>
           </div>
