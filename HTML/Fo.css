@@ -17,6 +17,7 @@
       color: #ffffff;
       border-top: 5px #404B49 solid;
       display: block;
+      text-shadow: 2px 1px 1px black;
       transition: 0.3s;
     }
     #uccso{
@@ -27,6 +28,7 @@
     .menu a:hover {
       color: rgb(51, 61, 59);
       background-color: #E2D8C8;
+      text-shadow: 2px 1px 1px white;
     }
     
     
@@ -56,6 +58,8 @@
         margin-left: -5%;
         height: fit-content;
         min-height: 1000px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 10px;
     }
     #logokep{
       padding: 0px;
@@ -66,16 +70,20 @@
     footer{
       letter-spacing: 1px;
       margin-top: 40%;
+      text-shadow: 2px 2px 2px black;
       text-align: center;
       color: #94b1ab;
     }
     #slidekep{
       width: 100%;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
     }
     #slidekep:hover{
       transform: none;
       box-shadow: none;
     }
+
     img:hover{
       box-shadow: 0px 0px 10px black;
       transform:  scale(1.05)
@@ -89,5 +97,13 @@
     }
     #kosarkep{
       width: 40px;
+      padding: 0px;
+      border: none;
+      padding-left: 10px;
+    }
+    #kosarkep:hover{
+      background-color: #333D3B;
+      transform: none;
+      box-shadow: none;
     }
     
