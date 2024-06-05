@@ -115,6 +115,10 @@
       padding: 0;
       margin-right: 10px;
     }
+    #nyil:hover{
+      transform: none;
+      box-shadow: none;
+    }
     #linkek{
       display: block;
     }
