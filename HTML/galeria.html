@@ -52,18 +52,32 @@
         flex-wrap: wrap;
         justify-content: space-around;
       }
+
+
+      .szurke{
+        filter: grayscale(100%);
+      }
+
+      #Imrebacsi{
+        filter: grayscale(100%);
+        transition: 0.4s;
+      }
+
+      #Imrebacsi:hover{
+        filter: grayscale(40%);
+      }
     </style>
 </head>
 <body>
   <div class="menu">
     <a href="index.html" id="logokep"><img src="../kepek/logo.PNG" href="index.html"></a>
     <button id="nyilacska" onclick="Menu()"><img src="../kepek/Arrow 3.png" alt=""></button>
-  <div id="linkek">
+          <div id="linkek">
     <a href="borok.html" id="elso">Borok</a>
     <a href="rolunk.html">Rólunk</a>
     <a href="erdekessegek.html">Érdekességek</a>
     <a href="galeria.html">Galéria</a>
-  </div>
+          </div>
   <a href="kosar.html" id="kosarkep"><img src="../kepek/kosarikon.png" alt=""></a>
     <footer>
       +36 30 123 4567<br>
@@ -104,6 +118,26 @@
             <div class="kepek">
               <img src="../kepek/TinodiBor.jpg" alt="Szőlő tálban">
               <div class="kepalairas">Első borunk 2008-ban - 2008</div>
+            </div>
+
+            <div class="kepek">
+              <img src="../kepek/Imrebacsi.jpg" alt="Szőlő tálban" id="Imrebacsi">
+              <div class="kepalairas">Borászatunk egykori igazgatója, Kerepes Imre (1912-2002) - 1988</div>
+            </div>
+
+            <div class="kepek">
+              <img src="../kepek/BacsiUl.jpg" alt="Szőlő tálban">
+              <div class="kepalairas">Orosházi Ferenc, a jelenlegi igazgató (1946-) - 2015</div>
+            </div>
+
+            <div class="kepek">
+              <img src="../kepek/Szureteles.jpg" alt="Szőlő tálban" class="szurke">
+              <div class="kepalairas">Szüretelés egy meleg napon - 1973</div>
+            </div>
+
+            <div class="kepek">
+              <img src="../kepek/SzoloTalban1904.jpg" alt="Szőlő tálban" class="szurke">
+              <div class="kepalairas">Első fotó a szőlőnkről - 1904</div>
             </div>
 
             
