@@ -80,20 +80,22 @@
 </head>
     <body>
        
-        <div class="menu">
-          <a href="index.html" id="logokep"><img src="../kepek/logo.PNG" href="index.html"></a>
-            <a href="borok.html" id="elso">Borok</a>
-            <a href="rolunk.html">Rólunk</a>
-            <a href="erdekessegek.html">Érdekességek</a>
-            <a href="galeria.html">Galéria</a>
-            <a href="kosar.html" id="kosarkep"><img src="../kepek/kosarikon.png" alt=""></a>
-
-            <footer>
-              +36 30 123 4567<br>
-              tinodibor@gmail.com
-              
-            </footer>
-          </div>
+      <div class="menu">
+        <a href="index.html" id="logokep"><img src="../kepek/logo.PNG" href="index.html"></a>
+        <button id="nyilacska" onclick="Menu()"><img src="../kepek/Arrow 3.png" alt=""></button>
+      <div id="linkek">
+        <a href="borok.html" id="elso">Borok</a>
+        <a href="rolunk.html">Rólunk</a>
+        <a href="erdekessegek.html">Érdekességek</a>
+        <a href="galeria.html">Galéria</a>
+      </div>
+      <a href="kosar.html" id="kosarkep"><img src="../kepek/kosarikon.png" alt=""></a>
+        <footer>
+          +36 30 123 4567<br>
+          tinodibor@gmail.com 
+          
+        </footer>
+      </div>
           
           <div class="kontener">
             <div class="content">
@@ -114,5 +116,15 @@
               </div>
             </div>
           </div>
+          <script>
+            function Menu() {
+            let x = document.getElementById("linkek");
+            if (x.style.display === "block") {
+              x.style.display = "none";
+            } else {
+              x.style.display = "block";
+            }
+      }
+          </script>
     </body>
 </html>
