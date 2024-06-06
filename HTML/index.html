@@ -266,8 +266,10 @@ function Menu() {
       let y = document.getElementById("nyil")
       if (x.style.display === "block") {
         x.style.display = "none";
+        y.style.transform = 'rotate(' + -360 + 'deg)'
       } else {
         x.style.display = "block";
+        y.style.transform = 'rotate(' + -180 + 'deg)'
       }
 }
           </script>
