@@ -7,9 +7,7 @@
       left: 0;
       background-color: #333D3B; 
       overflow-x: hidden; 
-    }
-    
-    
+    }   
     .menu a {
       padding: 20px 0px 20px 8px;
       text-decoration: none;
@@ -95,29 +93,8 @@
       text-align: center;
       margin: 0 auto;
     }
-    #kosarkep{
-      width: 50px;
-      padding: 0px;
-      border: none;
-      padding-left: 10px;
-    }
-    #kosarkep:hover{
-      background-color: #333D3B;
-      transform: none;
-      box-shadow: none;
-    }
     #nyilacska{
-      background-color: #333D3B;
-      border: none;
-      float: right;
       display: none;
-      margin: 0 0 0 0;
-      padding: 0;
-      margin-right: 10px;
-    }
-    #nyil:hover{
-      transform: none;
-      box-shadow: none;
     }
     #linkek{
       display: block;
@@ -127,6 +104,9 @@
         display: none;
       }
       #nyilacska{
+        display: block;
+      }
+      #nyil{
         display: block;
       }
       footer{
