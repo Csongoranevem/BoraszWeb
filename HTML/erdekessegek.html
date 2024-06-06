@@ -73,6 +73,10 @@
             border-radius: 5px;
             border: 2px solid black;
               }
+              #korkep{animation-name: forog;
+                      animation-duration: 1s;
+                      animation-fill-mode:forwards;
+                      animation-timing-function: ease-out;}
           #ujkorart{width: 340px; margin-left:10px}
 
               @keyframes homaly{
@@ -83,6 +87,10 @@
             @keyframes oldal{
               0%{margin-top:30px ;}
               100%{margin-top:0px ;}
+          }
+          @keyframes forog{
+              0%{transform: rotate(0deg);}
+              100%{transform: rotate(360deg);}
           }
           @media only screen and (max-width:1350px)
           {
@@ -133,7 +141,7 @@
             <div class="content">
               <h1 style="font-size:50px">Tudtad?</h1>
               <div class="sor">
-                <img src="../kepek/gorogart.jpg" alt="" class="art" style="width: 250px; border-radius: 250px;">
+                <img src="../kepek/gorogart.jpg" alt="" class="art" id="korkep" style="width: 250px; border-radius: 250px;">
                 
                 <p id="elsoszov"><b>Ősi eredet:</b> A bor készítésének nyomai több mint 8 000 évvel ezelőttre nyúlnak vissza, a mai Grúzia területén. Az egyik legrégebbi borászati helyszínt egy grúz barlangban találták, ahol agyagedények maradványai tartalmaztak bor előállítására utaló nyomokat. <br> <b>Földrajzi sokszínűség:</b> A bor szinte minden kontinensen készül, kivéve az Antarktiszt. Franciaország, Olaszország, Spanyolország, az Egyesült Államok, és Ausztrália a legnagyobb borászati nemzetek közé tartoznak.</p>
               </div>
