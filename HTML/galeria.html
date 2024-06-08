@@ -98,14 +98,14 @@
 <body>
   <div class="menu">
     <a href="index.html" id="logokep"><img src="../kepek/logo.PNG" href="index.html"></a>
-    <button id="nyilacska" onclick="Menu()"><img src="../kepek/Arrow 3.png" alt=""></button>
+    <button id="nyilacska" onclick="Menu()"><img src="../kepek/Arrow 3.png" alt="" id="nyil"></button>
           <div id="linkek">
     <a href="borok.html" id="elso">Borok</a>
     <a href="rolunk.html">Rólunk</a>
     <a href="erdekessegek.html">Érdekességek</a>
     <a href="galeria.html">Galéria</a>
           </div>
-  <a href="kosar.html" id="kosarkep"><img src="../kepek/kosarikon.png" alt=""></a>
+  <a href="kosar.html" id="kosarkep"><img src="../kepek/kosarikon.png" alt="" id="kosaracska"></a>
     <footer>
       +36 30 123 4567<br>
       tinodibor@gmail.com 
@@ -174,13 +174,16 @@
       </div>
       <script>
         function Menu() {
-        let x = document.getElementById("linkek");
-        if (x.style.display === "block") {
-          x.style.display = "none";
+          let x = document.getElementById("linkek");
+          let y = document.getElementById("nyil")
+          if (x.style.display === "block") {
+            x.style.display = "none";
+            y.style.transform = 'rotate(' + -360 + 'deg)'
         } else {
-          x.style.display = "block";
+            x.style.display = "block";
+            y.style.transform = 'rotate(' + -180 + 'deg)'
+          }
         }
-  }
       </script>
 </body>
 </html>

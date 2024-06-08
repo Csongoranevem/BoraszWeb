@@ -21,6 +21,12 @@
       transform: none;
       box-shadow: none;
     }
+    #kosaracska:hover{
+      background-color: rgba(51, 61, 59, 1);
+      transform: none;
+      box-shadow: none;
+    }
+
     #nyilacska{
       background-color: #333D3B;
       border: none;
@@ -29,15 +35,17 @@
       padding: 0;
       margin-right: 10px;
     }
+
+    #nyil{
+      transform: none;
+      box-shadow: none;
+
+    }
     #nyil:hover{
       transform: none;
       box-shadow: none;
     }
-    #kosaracska:hover{
-      background-color: rgba(51, 61, 59, 1);
-      transform: none;
-      box-shadow: none;
-    }
+
       .kepek{
         margin-left: 2vh;
         margin-right: 2vh;
@@ -54,8 +62,8 @@
         position: relative;
         height: 40vh;
         width: 100%;
-        min-width: 40vh;
-        object-fit: cover;
+        min-width: 100%;
+        object-fit:cover;
       }
       
 
@@ -99,14 +107,14 @@
 <body>
   <div class="menu">
     <a href="index.html" id="logokep"><img src="../kepek/logo.PNG" href="index.html"></a>
-    <button id="nyilacska" onclick="Menu()"><img src="../kepek/Arrow 3.png" alt=""></button>
+    <button id="nyilacska" onclick="Menu()"><img src="../kepek/Arrow 3.png" alt="" id="nyil"></button>
           <div id="linkek">
     <a href="borok.html" id="elso">Borok</a>
     <a href="rolunk.html">Rólunk</a>
     <a href="erdekessegek.html">Érdekességek</a>
     <a href="galeria.html">Galéria</a>
           </div>
-  <a href="kosar.html" id="kosarkep"><img src="../kepek/kosarikon.png" alt=""></a>
+  <a href="kosar.html" id="kosarkep"><img src="../kepek/kosarikon.png" alt="" id="kosaracska"></a>
     <footer>
       +36 30 123 4567<br>
       tinodibor@gmail.com 
@@ -119,36 +127,14 @@
           
           <div class="kepdiv">
             <div class="kepek">
-              <img src="../kepek/SzoloTalban.jpg" alt="Szőlő tálban">
-              <div class="kepalairas">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid inventore in quaerat nulla perspiciatis, ex autem dolores commodi nesciunt obcaecati corrupti praesentium est voluptatum. Est nulla nihil reprehenderit. Nesciunt, ducimus!
-              Eligendi officia quasi commodi nemo facere natus, modi odio, dolorum vel quia laboriosam nihil beatae ipsam iure at doloribus! Totam officiis assumenda dicta in. Sit, magni vel? Commodi, et adipisci.</div>
+              <img src="../kepek/VorosBor.jpg" alt="Szőlő tálban">
+              <div class="kepalairas"><b>A vörösbor</b> a boroknak az a fajtája, amelyről a legkönnyebben lehet felismerni ezt az italt. A vörösbor a vörös szőlőfajták erjesztésével készül. A szőlőt először leszüretelik, majd zúzzák, és a héjával együtt erjesztik, hogy a bor megkapja jellegzetes színét. Az erjesztés után a bort préselik, majd hordókban vagy tartályokban érlelik, hogy tovább gazdagodjon az íze. A vörösborok jellemzően sötét színűek, telt ízűek, és gyakran gyümölcsös, fűszeres aromákat kínálnak. Az érlelési folyamat hossza és a használt szőlőfajta nagyban befolyásolja a bor végleges karakterét.</div>
             </div>
 
             <div class="kepek">
-              <img src="../kepek/Kekszolo_Kozeli.jpg" alt="Szőlő tálban">
-              <div class="kepalairas">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid inventore in quaerat nulla perspiciatis, ex autem dolores commodi nesciunt obcaecati corrupti praesentium est voluptatum. Est nulla nihil reprehenderit. Nesciunt, ducimus!
-                Eligendi officia quasi commodi nemo facere natus, modi odio, dolorum vel quia laboriosam nihil beatae ipsam iure at doloribus! Totam officiis assumenda dicta in. Sit, magni vel? Commodi, et adipisci.</div>
+              <img src="../kepek/FeherBor.jpg" alt="Szőlő tálban">
+              <div class="kepalairas"><b>A fehérbor</b> fehér szőlőfajtákból készül, bár néha vörös szőlőt is használnak, de ekkor a héjat gyorsan eltávolítják, hogy ne színezze el a bort. A szőlőt először leszüretelik, majd zúzzák és préselik, hogy elválasszák a levet a héjtól. Az erjesztés rozsdamentes acéltartályokban vagy fahordókban történik, alacsonyabb hőmérsékleten, hogy megőrizze a frissességet és a gyümölcsös aromákat. A fehérborok jellemzően világos színűek, könnyedek és üdítőek, citrusos, virágos vagy ásványos jegyekkel. Az érlelési idő rövidebb, mint a vörösborok esetében, ami friss, tiszta ízprofilt eredményez.</div>
               </div>
-            
-
-            <div class="kepek">
-              <img src="../kepek/Bor1904.jpg" alt="Szőlő tálban">
-              <div class="kepalairas">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid inventore in quaerat nulla perspiciatis, ex autem dolores commodi nesciunt obcaecati corrupti praesentium est voluptatum. Est nulla nihil reprehenderit. Nesciunt, ducimus!
-                Eligendi officia quasi commodi nemo facere natus, modi odio, dolorum vel quia laboriosam nihil beatae ipsam iure at doloribus! Totam officiis assumenda dicta in. Sit, magni vel? Commodi, et adipisci.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid inventore in quaerat nulla perspiciatis, ex autem dolores commodi nesciunt obcaecati corrupti praesentium est voluptatum. Est nulla nihil reprehenderit. Nesciunt, ducimus!
-                Eligendi officia quasi commodi nemo facere natus, modi odio, dolorum vel quia laboriosam nihil beatae ipsam iure at doloribus! Totam officiis assumenda dicta in. Sit, magni vel? Commodi, et adipisci.</div>
-              </div>
-
-            <div class="kepek">
-              <img src="../kepek/kozepkorart.jpg" alt="Szőlő tálban">
-              <div class="kepalairas">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid inventore in quaerat nulla perspiciatis, ex autem dolores commodi nesciunt obcaecati corrupti praesentium est voluptatum. Est nulla nihil reprehenderit. Nesciunt, ducimus!
-                Eligendi officia quasi commodi nemo facere natus, modi odio, dolorum vel quia laboriosam nihil beatae ipsam iure at doloribus! Totam officiis assumenda dicta in. Sit, magni vel? Commodi, et adipisci.</div>
-              </div>
-
-            <div class="kepek">
-              <img src="../kepek/Tajkep.jpg" alt="Szőlő tálban">
-              <div class="kepalairas">quasi commodi nemo facere natus, modi odio, dolorum vel quia laboriosam nihil beatae ipsam iure at doloribus! Totam officiis assumenda dicta in. Sit, magni vel? Commodi, et adipisci.</div>
-            </div>
 
           </div>
           </div>
@@ -157,13 +143,16 @@
       </div>
       <script>
         function Menu() {
-        let x = document.getElementById("linkek");
-        if (x.style.display === "block") {
-          x.style.display = "none";
+          let x = document.getElementById("linkek");
+          let y = document.getElementById("nyil")
+          if (x.style.display === "block") {
+            x.style.display = "none";
+            y.style.transform = 'rotate(' + -360 + 'deg)'
         } else {
-          x.style.display = "block";
+            x.style.display = "block";
+            y.style.transform = 'rotate(' + -180 + 'deg)'
+          }
         }
-  }
       </script>
 </body>
 </html>
