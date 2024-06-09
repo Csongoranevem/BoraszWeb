@@ -81,7 +81,7 @@ h1{
   color: #6A332F;
 }
 .kartyak{
-  width: 320px;
+  width: 30%;
   margin: 20px auto;
   background-color: rgba(51, 61, 59,0.8);
   border-radius: 20px;
@@ -107,21 +107,18 @@ h1{
     button{
       background-color: #E2D8C8;
       border-radius: 10px;
-      padding: 5px;
+      padding: 10px;
       margin: 10px;
       margin-top: 0px;
     }
-    #kosarkep{
-      width: 50px;
+   #kosaracska{
+       width: 50px;
       padding: 0px;
       border: none;
       padding-left: 10px;
-    }
-    #kosarkep:hover{
-      background-color: #333D3B;
-      transform: none;
-      box-shadow: none;
-    }
+      position: relative;
+      display: inline-block;
+   }
     #nyilacska{
       background-color: #333D3B;
       border: none;
@@ -145,14 +142,23 @@ h1{
     #nyilacska{
       background-color: rgba(51, 61, 59, 0);
     }
-    
+    @media only screen and (max-width: 1000px) {
+      .kartyak{
+        width: 48%;
+      }
+    }
+    @media only screen and (max-width: 600px) {
+      .kartyak{
+        width: 90%;
+      }
+    }
     </style>
 </head>
     <body>
        
 
         <div class="menu">
-            <a href="./index.html" id="logokep"><img src="./kepek/logo.PNG" href="../index.html"></a>
+            <a href="./index.html" id="logokep"><img src="./kepek/logo.PNG" href="./index.html"></a>
             <button id="nyilacska" onclick="Menu()"><img src="./kepek/Arrow 3.png" alt="" id="nyil"></button>
           <div id="linkek">
             <a href="./HTML/borok.html" id="elso">Borok</a>
@@ -160,7 +166,8 @@ h1{
             <a href="./HTML/erdekessegek.html">Érdekességek</a>
             <a href="./HTML/galeria.html">Galéria</a>
           </div>
-          <a href="./HTML/kosar.html" id="kosarkep"><img src="./kepek/kosarikon.png" alt="" id="kosaracska"></a>
+          <img src="./kepek/kosarikon.png" alt="" id="kosaracska">
+          <div id="kosardiv">asdasdasdasdasdasdfsdhjgfsjdbgijkfgbjkhnsfdnbfjkgsdhfgad</div>
             <footer>
               +36 30 123 4567<br>
               tinodibor@gmail.com 
@@ -200,40 +207,47 @@ h1{
                 
                 <br>
                 <div class="kartyak">
-                  <img src="./kepek/Bor1904.jpg" alt="">
-                  <p>Vörösbor</p>
-                  <button onclick=Kosar()>Kosárba</button>
+                  <img src="./Borok/Almasvoros.jpg" alt="">
+                  <p>Aromás Vörösbor <br> 9.000Ft</p>
+                  <button value="9000" onclick=Kosar(value)>Kosárba</button>
                 </div>
                 <div class="kartyak">
-                  <img src="./kepek/Bor1904.jpg" alt="">
-                  <p>Vörösbor</p>
-                  <button onclick=Kosar()>Kosárba</button>
+                  <img src="./Borok/Autumnrose.jpg" alt="">
+                  <p>Prémium Rosé <br> 8.999Ft</p>
+                  <button value="8999" onclick=Kosar(value)>Kosárba</button>
                 </div>
                 <div class="kartyak">
-                  <img src="./kepek/Bor1904.jpg" alt="">
-                  <p>Vörösbor</p>
-                  <button onclick=Kosar()>Kosárba</button>
+                  <img src="./Borok/Eperke.jpg" alt="">
+                  <p>Fehérbor <br> 5.000Ft</p>
+                  <button value="5000" onclick=Kosar(value)>Kosárba</button>
                 </div>
                 <div class="kartyak">
-                  <img src="./kepek/Bor1904.jpg" alt="">
-                  <p>Vörösbor</p>
-                  <button onclick=Kosar()>Kosárba</button>
+                  <img src="./Borok/Masvoros.jpg" alt="">
+                  <p>Nyárias Vörösbor <br> 12.000FT</p>
+                  <button value="12000" onclick=Kosar(value)>Kosárba</button>
                 </div>
                 <div class="kartyak">
-                  <img src="./kepek/Bor1904.jpg" alt="">
-                  <p>Vörösbor</p>
-                  <button onclick=Kosar()>Kosárba</button>
+                  <img src="./Borok/Jonezettki.jpg" alt="">
+                  <p>Jól kinéző bor <br> 20.000Ft</p>
+                  <button value="20000" onclick=Kosar(value)>Kosárba</button>
                 </div>
                 <div class="kartyak">
-                  <img src="./kepek/Bor1904.jpg" alt="">
-                  <p>Vörösbor</p>
-                  <button onclick=Kosar()>Kosárba</button>
+                  <img src="./Borok/Lila.jpg" alt="">
+                  <p>Cuki virágos bor <br> 30.000Ft</p>
+                  <button value="30000" onclick=Kosar(value)>Kosárba</button>
                 </div>
               </div>
               
             </div>
           </div>
           <script>
+            let tetelek = ""
+            let feherborszamlalo = 1
+            let aromasvbszamlalo = 1
+            let roseszamlalo = 1
+            let nyarivbszamlalo = 1
+            let joborszamlalo = 1
+            let viragosborszamlalo = 1
             let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -271,6 +285,53 @@ function Menu() {
         x.style.display = "block";
         y.style.transform = 'rotate(' + -180 + 'deg)'
       }
+}
+let osszeg = 0
+function Kosar(ar){
+      let elozoszoveg = ""
+      let hozzaadando = ""
+    let szamit = Number(ar)
+    if(ar == 9000)
+    {
+    tetelek = tetelek+"Aromás vörösbor, "
+    }
+    else if(ar = 8999){
+      hozzaadando = "Prémium Rosé, "+roseszamlalo+"x"
+      if(tetelek.includes(hozzaadando)){
+       elozoszoveg = hozzaadando
+        roseszamlalo+= 1
+        hozzaadando = "Prémium Rosé, "+roseszamlalo+"x"
+        tetelek.replace(elozoszoveg, hozzaadando)
+      }
+      else{
+        hozzaadando = "Fehérbor, "+feherborszamlalo+"x"
+        tetelek += hozzaadando
+      }
+    }
+    else if(ar == 5000){
+      hozzaadando = "Fehérbor, "+feherborszamlalo+"x"
+      if(tetelek.includes(hozzaadando)){
+       elozoszoveg = hozzaadando
+        feherborszamlalo+= 1
+        hozzaadando = "Fehérbor, "+feherborszamlalo+"x"
+        tetelek.replace(elozoszoveg, hozzaadando)
+      }
+      else{
+        hozzaadando = "Fehérbor, "+feherborszamlalo+"x"
+        tetelek += hozzaadando
+      }
+    }
+    else if(ar == 12000){
+      tetelek = tetelek+"Aromás vörösbor, "
+    }
+    else if(ar == 20000){
+      tetelek = tetelek+"Aromás vörösbor, "
+    }
+    else if(ar == 30000){
+      tetelek = tetelek+"Aromás vörösbor, "
+    }
+    osszeg += szamit
+    alert("Összesen fizetendő: "+ osszeg+"\n"+tetelek)
 }
           </script>
     </body>

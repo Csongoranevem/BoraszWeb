@@ -18,6 +18,21 @@
       text-shadow: 2px 1px 1px black;
       transition: 0.3s;
     }
+    #kosardiv{
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    z-index: 10;
+    }
+    #kosaracska:hover #kosardiv{
+      display: block;
+    }
     #uccso{
         border-bottom: 5px solid #404B49;
     }

@@ -10,7 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        #kosarkep{
+      .kepborder{
+        border: black 2px solid;
+      }
+        #kosaracska{
       width: 50px;
       padding: 0px;
       border: none;
@@ -22,7 +25,6 @@
       box-shadow: none;
     }
     #nyilacska{
-      background-color: #333D3B;
       border: none;
       float: right;
       margin: 0 0 0 0;
@@ -37,6 +39,12 @@
       background-color: rgba(51, 61, 59, 1);
       transform: none;
       box-shadow: none;
+    }
+    #nyil{
+      background-color: rgba(51, 61, 59, 0);
+    }
+    #nyilacska{
+      background-color: rgba(51, 61, 59, 0);
     }
         .content{text-align: center;
         font-family: kalam;
@@ -75,8 +83,7 @@
     animation-name: fekete;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-}
-img{border: black 2px solid;}
+    }
 h1{
     margin-top: 0px;
 }
@@ -149,8 +156,8 @@ h1{
             <a href="erdekessegek.html">Érdekességek</a>
             <a href="galeria.html">Galéria</a>
           </div>
-          <a href="kosar.html" id="kosarkep"><img src="../kepek/kosarikon.png" alt="" id="kosaracska"></a>
-            <footer>
+        <img src="../kepek/kosarikon.png" alt="" id="kosaracska">
+        <footer>
               +36 30 123 4567<br>
               tinodibor@gmail.com 
               
@@ -162,16 +169,16 @@ h1{
                 <h1 style="font-size:50px;">Történelmünk</h1>
                 <div class="sor">
                     <p class="szovegek" id="elsoszov">Történetünk 1548-ban kezdődik, a magyar történelem egy igen intenzív korszakában. Ebben az évben alapította a borászatot névadónk, az 1510 körül született Tinódi Lantos Sebestyén. A megalapítás közvetlen oka az volt, hogy a költőt nem szolgálták ki egy vendégeskedés alkalmával. Ezen bánatát meg is énekelte a Sokfajta részögösről című művében. Az alapítás óta közel 500 év telt el. Ezen idő alatt az ország sok kézen átment, sok csatát és háborút élt meg.</p>
-                    <img src="../kepek/tinodiFestmeny.jpg" alt="" id="tinodi">
+                    <img src="../kepek/tinodiFestmeny.jpg" alt="" id="tinodi" class="kepborder">
                 </div>
                 
                 <div class="sor" id="revers">
-                    <img src="../kepek/Bor_KastelyHatterrel.jpg" alt="" id="boroskep">
+                    <img src="../kepek/Bor_KastelyHatterrel.jpg" alt="" id="boroskep" class="kepborder">
                     <p class="szovegek" id="masodszov">1571-ben a török csapatok elérték Dunavárhegyet, és a város, ahogy a borászat maga is török kézre került. Ott is maradt közel 100 évig, amíg a magyar és osztrák csapatok vissza nem szerezték a város.Azonban a török kivonulása után nem ért véget a történetünk. Rengeteg történelmi személy kóstolta meg városunk híres borait, köztük Rákóczi, Ferenc József, Bem tábornok, Mikszáth Kálmán, illetve Winston Curchill, aki az italok nagy kedvelője volt.</p>
                 </div>
                 <div class="sor">
                     <p class="szovegek" id="harszov">"500 év tapasztalata egy pohárba öntve", így beszélt Orosházi Ferenc, a borászat jelenlegi igazgatója. Feladatunknak tekintjük, hogy a borászatunk, illetve városunk hírnevét gyarapítsuk. Ezzel a szándékkal készítettük el weboldalunkat, hogy többek számára mesélhessük el történetünket, és azért, hogy nagyobb közönség számára tegyük borainkat elérhetővé.</p>
-                    <img src="../kepek/BacsiAll.jpg" alt="" id="allobacsi">
+                    <img src="../kepek/BacsiAll.jpg" alt="" id="allobacsi" class="kepborder">
                 </div>
 
             </div>
